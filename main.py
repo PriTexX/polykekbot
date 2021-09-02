@@ -37,9 +37,10 @@ def main(TOKEN):
             bot.load_extension(f"cogs.{filename[:-3]}")
 
     bot.run(TOKEN)
+    
+    
 if __name__ == '__main__':
-    os.environ.__setitem__("token", "ODc5OTI1MDcwNjc4NjA5OTQx.YSW0FQ.GlDVrr51BrdmhxINi6yZZ7Gzw9g")
-    _TOKEN = os.environ.get("token")
+    _TOKEN = os.environ.get("TOKEN")
     main(_TOKEN)
 
 
